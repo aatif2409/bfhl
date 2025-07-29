@@ -8,6 +8,9 @@ const DOB = "17091999";
 const EMAIL = "john@xyz.com";
 const ROLL_NUMBER = "ABCD123";
 
+app.get('/',(req,res)=>{
+  res.send("Backend is running ....");
+})
 app.post("/bfhl", (req, res) => {
   try {
     const { data } = req.body;
